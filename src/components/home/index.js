@@ -16,7 +16,7 @@ class Home extends Component {
           <div id="contentHome">
             <p> This app allows you to know meteorological information about the city you want </p>
             <p> Starting off is easy peasy </p>
-            <p> Click on the menu &quot Weather Map &quot and search the city of your choice </p>
+            <p> Click on the menu Weather Map and search the city of your choice </p>
             <p>If you selects several city (10 max)</p>
             <p>you will be able to compare them in the new menu</p>
           </div>
@@ -28,8 +28,7 @@ class Home extends Component {
         <h1 id="titleHome">Welcome to the weather app</h1>
         <div id="contentHome">
           <p> This app allows you to know meteorological information about the city you want </p>
-          <p> Starting off is easy peasy. </p>
-          <p> Connect yourself </p>
+          <p> Starting off is easy peasy. Connect yourself </p>
         </div>
       </div>
     )

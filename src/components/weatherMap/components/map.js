@@ -81,7 +81,7 @@ class WorldMap extends Component {
                 <br />
                 {`${data.humidity}% humidity`}
                 <br />
-                <p onClick={() => this.handleClick(pos)}>delete</p>
+                <p className="test" onClick={() => this.handleClick(pos)}>&#xe014;Remove</p>
               </Popup>
             </Marker>
           ))}

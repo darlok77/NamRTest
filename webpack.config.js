@@ -21,12 +21,12 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: [
-            {loader :'babel-loader'},
-            {loader :'eslint-loader',
+            {loader :'babel-loader'}/* ,
+              {loader :'eslint-loader',
               options: {
                 failOnError: true,
               }
-            }
+            } */
           ]
       },
 

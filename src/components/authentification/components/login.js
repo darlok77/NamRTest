@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   paper: {
     position: 'absolute',
     width: 400,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: '#d6d6c2',
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
@@ -71,8 +71,8 @@ const Login = () => {
         <div style={modalStyle} className={classes.paper}>
           <h2 id="simple-modal-title">Login</h2>
           <div id="simple-modal-description">
-            <input id="inputLoginName" name="username" type="text" />
-            <input id="inputLoginPwd" name="pwd" type="text" />
+            <input id="inputLoginName" className="inputLogin" placeholder="Username" name="username" type="text" />
+            <input id="inputLoginPwd" className="inputLogin" placeholder="Password" name="pwd" type="text" />
             <input id="btnLogin" type="submit" value="LOGIN" onClick={handleSubmit} />
           </div>
         </div>

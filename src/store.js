@@ -10,8 +10,7 @@ const productMode = (env) => {
       reducers,
       compose(
         applyMiddleware(thunk),
-        applyMiddleware(createLogger()),
-        window.devToolsExtension && window.devToolsExtension()
+        applyMiddleware(createLogger())
       )
     )
   }
