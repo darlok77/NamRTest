@@ -35,7 +35,7 @@ class WorldMap extends Component {
     * setData.
     * @param {Array} datas.
   */
-  setDatas(datas) { // todo
+  setDatas(datas) {
     this.setState({ datas })
   }
 
