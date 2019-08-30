@@ -5,15 +5,13 @@ import Home from './components/home'
 import CompareCities from './components/compareCities'
 import WeatherMap from './components/weatherMap'
 import Header from './components/header'
+import PrivateRoute from './privateRoute'
 
 /* Class Routes */
 class Routes extends Component {
   /**
     * Render.
     * return {String}.
-  */
-  /*  <PrivateRoute exact path="/" component={HomePage} />
-      <Route path="/login" component={LoginPage} />
   */
   render() {
     return (
@@ -23,8 +21,8 @@ class Routes extends Component {
             <Header />
             <Switch>
               <Route path="/" component={Home} exact />
-              <Route path="/compareCities" component={CompareCities} exact />
-              <Route path="/weatherMap" component={WeatherMap} exact />
+              <PrivateRoute path="/compareCities" component={CompareCities} />
+              <PrivateRoute path="/weatherMap" component={WeatherMap} />
             </Switch>
           </div>
         </BrowserRouter>

@@ -7,6 +7,7 @@ import { logout } from '../authentification/actions'
 
 /** Class Header */
 class Header extends Component {
+  /** Create a Header. */
   constructor() {
     super()
     this.state = {
@@ -15,6 +16,10 @@ class Header extends Component {
     }
   }
 
+  /**
+    * Component Did Update.
+    * @param {Object} prevProps.
+  */
   componentDidUpdate(prevProps) {
     const { user, datas } = this.props
     if (user !== prevProps.user) {
@@ -25,6 +30,10 @@ class Header extends Component {
     }
   }
 
+  /**
+    * Set Is Logged.
+    * @param {Object} user.
+  */
   setIsLogged(user) {
     if (Object.keys(user).length !== 0) {
       this.setState({ isLogged: false })
@@ -33,6 +42,10 @@ class Header extends Component {
     }
   }
 
+  /**
+    * Set Have Data.
+    * @param {Array} datas.
+  */
   setHaveData(datas) {
     if (datas.length !== 0) {
       this.setState({ haveData: false })
@@ -41,10 +54,17 @@ class Header extends Component {
     }
   }
 
+  /**
+    * Handle Click Disconnect.
+  */
   handleClickDisconnect() {
     logout()
   }
 
+  /**
+    * Show Login.
+    * retrun {String}.
+  */
   showLogin() {
     const { user } = this.props
     if (Object.keys(user).length !== 0) {
@@ -53,6 +73,10 @@ class Header extends Component {
     return <Login />
   }
 
+  /**
+    * Show Page.
+    * retrun {String}.
+  */
   showPage() {
     const { user } = this.props
     if (Object.keys(user).length !== 0) {
@@ -61,14 +85,18 @@ class Header extends Component {
           <li className="nav-item">
             <Link disabled className="nav-link" to="/weatherMap">Weather Map</Link>
           </li>
-          {this.showWeatherHistory()}
+          {this.showWeatherCompare()}
         </ul>
       )
     }
     return ''
   }
 
-  showWeatherHistory() {
+  /**
+    * Show Weather Compare.
+    * retrun {String}.
+  */
+  showWeatherCompare() {
     const { datas } = this.props
     if (Object.keys(datas).length !== 0) {
       return (

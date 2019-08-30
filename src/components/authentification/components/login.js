@@ -4,6 +4,10 @@ import { makeStyles } from '@material-ui/core/styles'
 
 import { login } from '../actions'
 
+/**
+  * Get Modal Style.
+  * retrun {Object}.
+*/
 const getModalStyle = () => {
   const top = 50
   const left = 50
@@ -14,6 +18,11 @@ const getModalStyle = () => {
   }
 }
 
+/**
+  * Use Style.
+  * @param {Object} theme
+  * retrun {Object}.
+*/
 const useStyles = makeStyles(theme => ({
   paper: {
     position: 'absolute',
@@ -26,6 +35,10 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
+/**
+  * Login.
+  * retrun {String}.
+*/
 const Login = () => {
   const [open, setOpen] = React.useState(false)
   const classes = useStyles()

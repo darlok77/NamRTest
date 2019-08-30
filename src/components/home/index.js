@@ -3,6 +3,10 @@ import { connect } from 'react-redux'
 
 /** Class Home */
 class Home extends Component {
+  /**
+    * Show Info.
+    * return {String}
+  */
   showInfo() {
     const { user } = this.props
     if (user.name !== undefined) {
