@@ -1,0 +1,67 @@
+$text: rgb(58, 58, 58);
+
+body { background-color: #30303d; color: #fff; }
+
+.leaflet-container {
+  height: 500px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+#divSearchCitie{
+  margin: 20px 
+}
+#chartdiv {
+  width: 60%;
+  height:400px;
+}
+.msgErr{
+  display: inline-block; 
+}
+#labelSort{
+  text-align: center;
+  color: white;
+}
+.radioGroupSort{
+  display :block !important;
+  margin: 10px 20px 20px 20px !important;
+  text-align: center;
+}
+#selectorDiv{
+  float: right;
+}
+.formControlerRadio{
+  width: 150px;
+  height:80px;
+}
+#formControlSort{
+  margin-top: 20px;
+}
+#btnSearch{
+  background-color: #9494b8;
+}
+#inputSearch{
+  background-color: #9494b8;
+  margin-right: 15px;
+}
+.divModal{
+  top: 10%;
+  left: 19%;
+  transform: translate(-10%, -19%);
+}
+#test{
+  background-color: blue;
+  width: 50%;
+  height:50%;
+}
+#openAuth{
+  float: right;
+  opacity: 0.5
+}
+#titleHome{
+  text-align: center;
+}
+
+#contentHome{
+  margin: 40px 20px 40px 20px;
+}
